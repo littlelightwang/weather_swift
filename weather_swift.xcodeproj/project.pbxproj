@@ -29,6 +29,9 @@
 		DC4A970F1A76254B008574CA /* tstorm1.png in Resources */ = {isa = PBXBuildFile; fileRef = DC4A96FF1A76254B008574CA /* tstorm1.png */; };
 		DC4A97101A76254B008574CA /* tstorm1_night.png in Resources */ = {isa = PBXBuildFile; fileRef = DC4A97001A76254B008574CA /* tstorm1_night.png */; };
 		DC4A97111A76254B008574CA /* tstorm3.png in Resources */ = {isa = PBXBuildFile; fileRef = DC4A97011A76254B008574CA /* tstorm3.png */; };
+		DCC8CD5A1A78E40C0064FC0E /* background_summer.png in Resources */ = {isa = PBXBuildFile; fileRef = DCC8CD581A78E40C0064FC0E /* background_summer.png */; };
+		DCC8CD5B1A78E40C0064FC0E /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = DCC8CD591A78E40C0064FC0E /* background.png */; };
+		DCC8CD5D1A78EA590064FC0E /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC8CD5C1A78EA590064FC0E /* WeatherService.swift */; };
 		DCFD278D1A7790E800F75993 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFD278B1A7790E800F75993 /* Alamofire.framework */; };
 		DCFD278E1A7790E800F75993 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DCFD278B1A7790E800F75993 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DCFD278F1A7790E800F75993 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFD278C1A7790E800F75993 /* SwiftyJSON.framework */; };
@@ -87,6 +90,9 @@
 		DC4A96FF1A76254B008574CA /* tstorm1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tstorm1.png; sourceTree = "<group>"; };
 		DC4A97001A76254B008574CA /* tstorm1_night.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tstorm1_night.png; sourceTree = "<group>"; };
 		DC4A97011A76254B008574CA /* tstorm3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tstorm3.png; sourceTree = "<group>"; };
+		DCC8CD581A78E40C0064FC0E /* background_summer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_summer.png; sourceTree = "<group>"; };
+		DCC8CD591A78E40C0064FC0E /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		DCC8CD5C1A78EA590064FC0E /* WeatherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		DCFD278B1A7790E800F75993 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		DCFD278C1A7790E800F75993 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,6 +142,7 @@
 				DC4A96D11A76248F008574CA /* AppDelegate.swift */,
 				DC4A96D31A76248F008574CA /* ViewController.swift */,
 				DC4A96D51A762490008574CA /* Main.storyboard */,
+				DCC8CD5C1A78EA590064FC0E /* WeatherService.swift */,
 				DC4A96D81A762490008574CA /* Images.xcassets */,
 				DC4A96DA1A762490008574CA /* LaunchScreen.xib */,
 				DC4A96F11A76254B008574CA /* images */,
@@ -147,6 +154,8 @@
 		DC4A96CF1A76248F008574CA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DCC8CD581A78E40C0064FC0E /* background_summer.png */,
+				DCC8CD591A78E40C0064FC0E /* background.png */,
 				DC4A96D01A76248F008574CA /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -286,6 +295,7 @@
 				DC4A97101A76254B008574CA /* tstorm1_night.png in Resources */,
 				DC4A96DC1A762490008574CA /* LaunchScreen.xib in Resources */,
 				DC4A97081A76254B008574CA /* light_rain.png in Resources */,
+				DCC8CD5A1A78E40C0064FC0E /* background_summer.png in Resources */,
 				DC4A970F1A76254B008574CA /* tstorm1.png in Resources */,
 				DC4A97111A76254B008574CA /* tstorm3.png in Resources */,
 				DC4A97071A76254B008574CA /* fog_night.png in Resources */,
@@ -297,6 +307,7 @@
 				DC4A97041A76254B008574CA /* cloudy2_night.png in Resources */,
 				DC4A970C1A76254B008574CA /* snow5.png in Resources */,
 				DC4A97051A76254B008574CA /* dunno.png in Resources */,
+				DCC8CD5B1A78E40C0064FC0E /* background.png in Resources */,
 				DC4A97031A76254B008574CA /* cloudy2.png in Resources */,
 				DC4A97061A76254B008574CA /* fog.png in Resources */,
 				DC4A97091A76254B008574CA /* overcast.png in Resources */,
@@ -319,6 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC4A96D41A762490008574CA /* ViewController.swift in Sources */,
+				DCC8CD5D1A78EA590064FC0E /* WeatherService.swift in Sources */,
 				DC4A96D21A76248F008574CA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,6 +454,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -456,6 +469,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
