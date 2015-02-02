@@ -58,7 +58,7 @@ class ViewController: UIViewController,CLLocationManagerDelegate {
     
     func handleSingleTap(recognizer:UITapGestureRecognizer){
         locationManager.startUpdatingLocation()
-        
+        self.loadingIndicator.startAnimating()
     }
 
     override func didReceiveMemoryWarning() {
@@ -84,6 +84,7 @@ class ViewController: UIViewController,CLLocationManagerDelegate {
                 println("Success:\(url)")
                 println(request)
                 var json = JSON(json!)
+                
                 self.updateUISuccess(json)
             }
         }
@@ -141,6 +142,7 @@ class ViewController: UIViewController,CLLocationManagerDelegate {
                     let rawDate = json["list"][index]["dt"].doubleValue
                     let date = NSDate(timeIntervalSince1970: rawDate)
                     let forecastTime = dateFormatter.stringFromDate(date)
+                    
                     if index == 1{
                         self.time1.text = forecastTime
                     }

@@ -17,8 +17,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2IS-fm-n7n">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2IS-fm-n7n">
                                 <rect key="frame" x="85" y="262" width="150" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="2IS-fm-n7n" secondAttribute="height" multiplier="150:61" id="TsN-hp-iCw"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -119,10 +122,14 @@
                             <constraint firstItem="7q7-pU-w4M" firstAttribute="width" secondItem="yN9-Bi-5N2" secondAttribute="width" id="B25-0p-KKr"/>
                             <constraint firstItem="7q7-pU-w4M" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="26" id="DSU-EK-co4"/>
                             <constraint firstItem="X9W-6R-lJZ" firstAttribute="top" secondItem="7q7-pU-w4M" secondAttribute="bottom" constant="8" id="IBM-PB-PtE"/>
+                            <constraint firstItem="2IS-fm-n7n" firstAttribute="centerX" secondItem="X9W-6R-lJZ" secondAttribute="centerX" id="SGy-GP-YSX"/>
                             <constraint firstItem="yN9-Bi-5N2" firstAttribute="top" secondItem="X9W-6R-lJZ" secondAttribute="bottom" constant="23" id="UQY-r5-Q7E"/>
                             <constraint firstItem="XWd-8w-8jA" firstAttribute="centerX" secondItem="X9W-6R-lJZ" secondAttribute="centerX" id="VIr-gV-J3C"/>
+                            <constraint firstItem="2IS-fm-n7n" firstAttribute="centerX" secondItem="X9W-6R-lJZ" secondAttribute="centerX" id="XwX-bF-mFD"/>
                             <constraint firstItem="yN9-Bi-5N2" firstAttribute="centerX" secondItem="X9W-6R-lJZ" secondAttribute="centerX" id="fFQ-L6-yv3"/>
+                            <constraint firstItem="2IS-fm-n7n" firstAttribute="top" secondItem="X9W-6R-lJZ" secondAttribute="bottom" constant="14" id="jFr-4d-aom"/>
                             <constraint firstItem="XWd-8w-8jA" firstAttribute="centerY" secondItem="X9W-6R-lJZ" secondAttribute="centerY" id="jvW-f5-qsQ"/>
+                            <constraint firstItem="2IS-fm-n7n" firstAttribute="width" secondItem="X9W-6R-lJZ" secondAttribute="width" id="pcB-Wb-rfk"/>
                             <constraint firstItem="7q7-pU-w4M" firstAttribute="height" secondItem="yN9-Bi-5N2" secondAttribute="height" id="rDD-gW-nUs"/>
                         </constraints>
                     </view>
@@ -148,7 +155,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="74.666666666666671" y="128.74666666666667"/>
+            <point key="canvasLocation" x="74" y="128"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
