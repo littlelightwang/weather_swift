@@ -6,6 +6,8 @@
 	<dict>
 		<key>swift_Weather Instant.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
@@ -13,6 +15,11 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
+		</dict>
+		<key>weather_swift Instant.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
 		</dict>
 		<key>weather_swift.xcscheme</key>
 		<dict>
@@ -43,6 +50,11 @@
 			<true/>
 		</dict>
 		<key>DC4A96E01A762490008574CA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DCBB02C01A806BB500EF02BB</key>
 		<dict>
 			<key>primary</key>
 			<true/>

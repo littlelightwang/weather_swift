@@ -1,8 +1,8 @@
 //
 //  TodayViewController.swift
-//  weather_swift
+//  weather_swift Instant
 //
-//  Created by wangxiaoliang on 15-2-2.
+//  Created by wangxiaoliang on 15-2-3.
 //  Copyright (c) 2015年 wangxiaoliang. All rights reserved.
 //
 
@@ -13,10 +13,11 @@ import Alamofire
 import SwiftyJSON
 import weatherService
 
-class TodayViewController: UIViewController, NCWidgetProviding ,CLLocationManagerDelegate {
+
+class TodayViewController: UIViewController, NCWidgetProviding, CLLocationManagerDelegate{
     
     let locationManager:CLLocationManager = CLLocationManager()
-
+    
     @IBOutlet weak var time1: UILabel!
     @IBOutlet weak var time2: UILabel!
     @IBOutlet weak var time3: UILabel!
@@ -29,17 +30,17 @@ class TodayViewController: UIViewController, NCWidgetProviding ,CLLocationManage
     @IBOutlet weak var temp2: UILabel!
     @IBOutlet weak var temp3: UILabel!
     @IBOutlet weak var temp4: UILabel!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         
         locationManager.requestAlwaysAuthorization()
         locationManager.startUpdatingLocation()
     }
-
+    
     func updateWeatherInfo(latitude: CLLocationDegrees, longitude: CLLocationDegrees) {
         let url = "http://api.openweathermap.org/data/2.5/forecast"
         let params = ["lat":latitude, "lon":longitude]
@@ -171,5 +172,4 @@ class TodayViewController: UIViewController, NCWidgetProviding ,CLLocationManage
         locationManager.startUpdatingLocation()
         completionHandler(NCUpdateResult.NewData)
     }
-
 }
